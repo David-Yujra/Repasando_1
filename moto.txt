@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class Multiplicacion {
+public static void main (String args[]){
+Scanner leer=new Scanner(System.in);
+int m,n,o,p,l,s;
+
+System.out.println("introdusca el tamañó para la matriz A");
+System.out.println("fila de A");
+m=leer.nextInt();
+System.out.println("columna de A");
+n=leer.nextInt();
+
+int[][] m1=new int[m][n];
+System.out.println("Matriz A");
+for(int i=0;i<m;i++) {
+	for(int j=0; j<n;j++) {
+		m1[i][j]=leer.nextInt();
+	}
+}
+
+System.out.println("fila de B");
+o=leer.nextInt();
+System.out.println("columna de B");
+p=leer.nextInt();
+
+int[][] m2=new int[o][p];
+System.out.println("Matriz B");
+for(int i=0;i<o;i++) {
+	for(int j=0; j<p;j++) {
+		m2[i][j]=leer.nextInt();
+	}
+}
+
+int [][] mr=new int[m][p];
+
+System.out.println("MATRIZ A");
+for(int i=0;i<m;i++) {
+	for(int j=0; j<n;j++) {
+		System.out.print(m1[i][j]+ " ");
+	}
+	System.out.println();
+}
+
+System.out.println("MATRIZ B");
+for(int i=0;i<o;i++) {
+	for(int j=0; j<p;j++) {
+		System.out.print(m2[i][j]+ " ");
+	}
+	System.out.println();
+}
+
+}
+}
